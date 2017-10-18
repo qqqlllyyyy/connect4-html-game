@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /*background-color: gray;*/
+  font-family: arial, sans-serif;
+}
+
+nav {
+  border-radius: 0 !important;
+}
+
+h1 {
+  text-align: center;
+  size: 60px;
+}
+
+#wrapper {
+  margin: 8px auto 6px;
+  width: 592px; /* 560 + 28 + 4 of border */
+  position: relative;
+}
+
+#board_wrapper {
+  /* 84 x 6 = 504 */
+  height: 584px;
+  background-color: white;
+  border: 2px solid black;
+  border-top: none;
+}
+
+div.row_wrapper {
+  height: 80px;
+}
+
+div.row_wrapper div {
+  /* total width 104 */
+  width: 84px;
+  height: 84px;
+  border: 2px solid black;
+  float: left;
+  background-color: black;
+}
+
+div.row_wrapper:nth-child(2) {
+  border-top: 1px solid black;
+}
+
+#dropspots {
+  background-color: black;
+}
+
+#dropspots > div {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  position: relative;
+  border: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#dropspots > div:first-child {
+  margin-left: 2px;
+}
+
+#dropspots > div:last-child {
+  margin-right: 2px;
+}
+
+canvas.red_chip {
+  position: absolute;
+  top: 0px;
+  left: -90px;
+}
+
+canvas.black_chip {
+  position: absolute;
+  top: 0px;
+  left: 600px;
+}
+
+.modal-footer {
+  text-align: center;
+}
